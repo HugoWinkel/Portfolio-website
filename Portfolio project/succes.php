@@ -18,7 +18,6 @@
     <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
     <link rel="manifest" href="images/favicon/site.webmanifest">
     <link rel="stylesheet" href="./style/style.css">
-    <script src="./js/main.js"></script>
     <script src="./js/AOS.js"></script>
 
 </head>
@@ -30,7 +29,6 @@
         <div class="container flex-lg-column">
             <a class="navbar-brand mx-lg-auto mb-lg-4" href="#">
                 <span class="h3 fw-bold d-block d-lg-none">Hugo Winkel</span>
-                <img src="./images/hugo.png" class="d-none d-lg-block rounded-circle" alt="Hugo">
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -39,6 +37,8 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto flex-lg-column text-lg-center">
 
+                    <img src="./images/hugo.png" class="foto-nav d-lg-block rounded-circle" alt="Hugo">
+                    
                     <li class="nav-item">
                         <a class="nav-link" href="#home">Home</a>
                     </li>
@@ -61,14 +61,14 @@
                         <a class="nav-link" href="#contact">Contact</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#logout">Log out</a>
+                        <a class="nav-link" href="logout.php">Logout</a>
                     </li>
-
                 </ul>
             </div>
         </div>
     </nav>
     <!-- //NAVBAR -->
+
 
     <!-- CONTENT WRAPPER -->
     <div id="content-wrapper">
@@ -86,8 +86,10 @@
 
                         <h1 class="display-4 fw-bold" data-aos="fade-up">MY NAME IS <span class="text-brand">HUGO 
                             WINKEL</span></h1>
-                        <p class="lead mt-2 mb-4" data-aos="fade-up" data-aos-delay="300">I am a student in the field of Software Development, with a focus on education. 
-                            My primary expertise lies in the creation of frontend applications. However, I aspire to become a Software Developer teacher after gaining a lot of experience in the future.</p>
+                            <p class="lead mt-2 mb-4" data-aos="fade-up" data-aos-delay="300">I am a student in the field of Software Development, with a focus on education. 
+                            My primary expertise lies in the creation of frontend applications. 
+                            However, I aspire to become a Software Developer teacher after gaining a lot of experience in the future. 
+                            In addition, I am currently working on this portfolio website to showcase and share my work and skills.</p>
                         <div data-aos="fade-up" data-aos-delay="600">
                             <a href="#projects" class="btn btn-brand me-3">Explore My Work</a>
                         </div>
@@ -194,7 +196,7 @@
             </div>
         </section>
     </div>
-</section>
+
 <!-- ABOUT -->
 
         
@@ -321,10 +323,9 @@
 
     </div>
         </section>
+</section>
 
     <!-- //ABOUT -->
-
-
 
         <!-- PROJECTS -->
         <section id="projects" class="full-height px-lg-5">
@@ -592,13 +593,13 @@
 
 <!-- //CV -->
 <section id="resume" class="full-height px-lg-5" data-aos="fade-up">
-    <div class="contact-container">
+    <div class="container">
         <div class="row pb-4" data-aos="fade-up">
             <div class="col-lg-8">
                 <h6 class="text-brand">Resume</h6>
                 <h1>Feel free to download my resume for more information about me!</h1>
-                <!-- Voeg hier de downloadlink toe -->
-                <p><a href="./CV/cv-Hugo-Winkel.pdf" class="download" download>Download My resume</a></p>
+                <embed src="./CV/cv-Hugo-Winkel.pdf" type="application/pdf" width="100%" height="600px" />
+                <p><a href="./CV/cv-Hugo-Winkel.pdf" class="download" download>Download My resume<i class="fa-solid fa-download"></i></a></p>
             </div>
         </div>
     </div>
@@ -608,7 +609,7 @@
            <!-- CONTACT -->
 <section id="contact" class="full-height px-lg-5" data-aos="fade-up">
 
-<div class="contact-container">
+<div class="container">
     <div class="row pb-4" data-aos="fade-up">
         <div class="col-lg-8">
             <h6 class="text-brand">Contact</h6>
@@ -633,7 +634,7 @@
                         <span>Email</span>
                     </div>
                     <p>
-                        <span>hugowinkel24@gmail.com</span>
+                        <span>hugowinkel96@gmail.com</span>
                     </p>
                 </div>
                 <div class="contact-item">
@@ -658,7 +659,7 @@
         </div> 
   
         <div class="col-lg-8 right-contact" data-aos="fade-up">
-            <form action="https://formsubmit.co/hugowinkel24@gmail.com" class="contact-form" method="POST">
+            <form action="https://formsubmit.co/hugowinkel96@gmail.com" class="contact-form" method="POST">
                 <div class="input-control">
                     <input type="text" name="naam" required placeholder="YOUR NAME">
                     <input type="email" name="email" required placeholder="YOUR EMAIL">
@@ -681,32 +682,6 @@
 
 </section>
 <!-- //CONTACT -->
-
-
-<!-- LOGOUT -->
-<section id="logout" class="full-height px-lg-5" data-aos="fade-up">
-    <div class="container">
-        <div class="row justify-content-center align-items-center">
-            <div class="col-md-6">
-                <div id="logout-form">
-                    <h2 class="form-heading">Log out</h2>
-                    <!-- Logout-formulier -->
-                    <form action="logout.php" method="post">
-                        <div class="form-group">
-                        </div>
-                        <div class="form-group">
-                            <button type="submit">Log out</button>
-                        </div>
-                    </form>
-                    <!-- Einde Logout-formulier -->
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-<!-- Einde LOGOUT -->
-
-
 
 <!-- FOOTER -->
 <section id="media">

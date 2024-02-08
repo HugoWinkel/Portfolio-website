@@ -1,3 +1,4 @@
+
 <?php
 session_start();
 
@@ -54,7 +55,6 @@ mysqli_close($conn);
 
 </head>
 <body>
-
 <!-- NAVBAR -->
 <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
     <div class="container flex-lg-column">
@@ -94,34 +94,36 @@ mysqli_close($conn);
     </div>
 </nav>
 <!-- //NAVBAR -->
-
-<!-- Login Section -->
+<!-- //login -->
 <section id="login" class="full-height px-lg-5">
-    <div class="container">
-        <div class="row justify-content-center align-items-center">
-            <div class="col-md-6">
+        <div class="container">
+            <div class="row justify-content-center align-items-center">
+                <div class="col-md-6">
+                <div class="alert alert-primary alert-dismissible fade show" role="alert">                
+                        Email or Password wrong. 
+                        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                    </div>
                 <div id="login-form">
                     <h2 class="form-heading">Log in</h2>
-                    <form action="login.php" method="post">
-                        <div class="form-group">
-                            <label for="login-email">Enter Email</label>
-                            <input type="email" id="login-email" name="login-email" placeholder="example123@gmail.com" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="login-password">Enter Password</label>
-                            <input type="password" id="login-password" name="login-password" placeholder="Example123" required>
-                        </div>
-                        <div class="form-group">
-                            <button type="submit">Log in</button>
-                        </div>
-                    </form>
-                </div>
-            </div>
+                        <form action="login.php" method="post">
+                            <div class="form-group">
+                                <label for="login-email">Enter Email</label>
+                                <input type="email" id="login-email" name="login-email" placeholder="example123@gmail.com" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="login-password">Enter Password</label>
+                                <input type="password" id="login-password" name="login-password" placeholder="Example123" required>
+                            </div>
+                            <div class="form-group">
+                                <button type="submit">Log in</button>
+                            </div>
+                        </form>
+
+        <!-- Notification element -->
+        <div id="notification" style="display:none;" class="alert alert-success" role="alert">
+            <!-- Notification will be displayed here -->
         </div>
-    </div>
-</section>
-<!-- End Login Section -->
 
+    </section>
+    <!-- //LOGIN -->
 </body>
-</html>
-

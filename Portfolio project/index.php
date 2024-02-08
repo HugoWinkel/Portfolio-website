@@ -18,54 +18,55 @@
     <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
     <link rel="manifest" href="images/favicon/site.webmanifest">
     <link rel="stylesheet" href="./style/style.css">
-    <script src="./js/main.js"></script>
     <script src="./js/AOS.js"></script>
 
 </head>
 
 <body data-bs-spy="scroll" data-bs-target=".navbar">
 
-    <!-- NAVBAR -->
-    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
-        <div class="container flex-lg-column">
-            <a class="navbar-brand mx-lg-auto mb-lg-4" href="#">
-                <span class="h3 fw-bold d-block d-lg-none">Hugo Winkel</span>
-                <img src="./images/hugo.png" class="d-none d-lg-block rounded-circle" alt="Hugo">
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto flex-lg-column text-lg-center">
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+    <div class="container flex-lg-column">
+        <a class="navbar-brand mx-lg-auto mb-lg-4" href="#home">
+            <span class="h3 fw-bold d-block d-lg-none">Hugo Winkel</span>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto flex-lg-column text-lg-center">
 
-                    <li class="nav-item">
-                        <a class="nav-link" href="#home">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#about">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#projects">Projects</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#certificates">Certificates</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#skills">Skills</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#contact">Contact</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#login">Log In</a>
-                    </li>
+                <img src="./images/hugo.png" class="foto-nav d-lg-block rounded-circle" alt="Hugo">
+            
+                <li class="nav-item">
+                    <a class="nav-link" href="#home">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#about">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#projects">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#certificates">Certificates</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#skills">Skills</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contact</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="login.php">Login</a>
+                </li>
 
-                </ul>
-            </div>
+            </ul>
         </div>
-    </nav>
-    <!-- //NAVBAR -->
+    </div>
+</nav>
+<!-- //NAVBAR -->
+
 
     <!-- CONTENT WRAPPER -->
     <div id="content-wrapper">
@@ -81,7 +82,9 @@
                         <p class="lead mt-2 mb-4" data-aos="fade-up" data-aos-delay="300">I am a student in the field of Software Development, with a focus on education. 
                             My primary expertise lies in the creation of frontend applications. 
                             However, I aspire to become a Software Developer teacher after gaining a lot of experience in the future. 
-                            In addition, I am currently working on this portfolio website to showcase and share my work and skills</p>
+                            In addition, I am currently working on this portfolio website to showcase and share my work and skills.
+                            If you're interested in my resume, you can <a href="#contact" class="here">contact</a> me and explain why. If it's reasonable, I'll share the information needed
+                            to log in on my website.</p>
                         <div data-aos="fade-up" data-aos-delay="600">
                             <a href="#projects" class="btn btn-brand me-3">Explore My Work</a>
                         </div>
@@ -188,7 +191,7 @@
             </div>
         </section>
     </div>
-</section>
+
 <!-- ABOUT -->
 
         
@@ -315,146 +318,147 @@
 
     </div>
         </section>
+</section>
 
     <!-- //ABOUT -->
 
 
 
-        <!-- PROJECTS -->
-        <section id="projects" class="full-height px-lg-5">
-            <div class="container">
-                <div class="row pb-4" data-aos="fade-up">
-                    <div class="col-lg-8">
-                        <h6 class="text-brand">Projects</h6>
-                        <h1>My Recent Projects</h1>
-                    </div>
-                </div>
-
-                <div class="row gy-4">
-
-                    <div class="col-md-6" data-aos="fade-up">
-                        <div class="card-custom rounded-4 bg-base shadow-effect">
-                            <div class="card-custom-image rounded-4">
-                                <img class="rounded-4" src="./images/projects/wolfram.png" alt="Wolfram Alpha">
-                            </div>
-                            <div class="card-custom-content p-4">
-                                <h4></h4>
-                                <p></p>
-                                <a href="https://www.wolframalpha.com/" class="link-custom">Recreation of wolfram Alpha Website</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6" data-aos="fade-up">
-                        <div class="card-custom rounded-4 bg-base shadow-effect">
-                            <div class="card-custom-image rounded-4">
-                                <img class="rounded-4" src="./images/projects/ownweb.png" alt="Website for a group project">
-                            </div>
-                            <div class="card-custom-content p-4">
-                                <h4></h4>
-                                <p></p>
-                                <a class="link-custom">Flight ticket website (group project)</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-md-6" data-aos="fade-up">
-                        <div class="card-custom rounded-4 bg-base shadow-effect">
-                            <div class="card-custom-image rounded-4">
-                                <img class="rounded-4" src="./images/projects/portfolio.png" alt="this website">
-                            </div>
-                            <div class="card-custom-content p-4">
-                                <h4></h4>
-                                <p></p>
-                                <a href="#" class="link-custom">This website</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-md-6" data-aos="fade-up">
-                        <div class="card-custom rounded-4 bg-base shadow-effect">
-                            <div class="card-custom-image rounded-4">
-                                <img class="rounded-4" src="./images/projects/first_portfolio.png" alt="my first portfolio website">
-                            </div>
-                            <div class="card-custom-content p-4">
-                                <h4></h4>
-                                <p></p>
-                                <a class="link-custom">My first portfolio website</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
+<!-- PROJECTS -->
+<section id="projects" class="full-height px-lg-5">
+    <div class="container">
+        <div class="row pb-4" data-aos="fade-up">
+            <div class="col-lg-8">
+                <h6 class="text-brand">Projects</h6>
+                <h1>My Recent Projects</h1>
             </div>
-        </section>
-        <!-- PROJECTS -->
+        </div>
 
-                <!-- CERTIFICATES -->
-                <section id="certificates" class="full-height px-lg-5">
-            <div class="container">
-                <div class="row pb-4" data-aos="fade-up">
-                    <div class="col-lg-8">
-                        <h6 class="text-brand">certificates</h6>
-                        <h1>My certificates</h1>
+        <div class="row gy-4">
+
+            <div class="col-md-6" data-aos="fade-up">
+                <div class="card-custom rounded-4 bg-base shadow-effect">
+                    <div class="card-custom-image rounded-4">
+                        <img class="rounded-4" src="./images/projects/wolfram.png" alt="Wolfram Alpha">
+                    </div>
+                    <div class="card-custom-content p-4">
+                        <h4></h4>
+                        <p></p>
+                        <a href="https://www.wolframalpha.com/" class="link-custom">Recreation of wolfram Alpha Website</a>
                     </div>
                 </div>
-
-                <div class="row gy-4">
-
-                    <div class="col-md-6" data-aos="fade-up">
-                        <div class="card-custom rounded-4 bg-base shadow-effect">
-                            <div class="card-custom-image rounded-4">
-                                <img class="rounded-4" src="./images/certificates/bootstrap.png" alt="Bootstrap certificate">
-                            </div>
-                            <div class="card-custom-content p-4">
-                                <h4></h4>
-                                <p></p>
-                                <a class="link-custom">Bootstrap certificate</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6" data-aos="fade-up">
-                        <div class="card-custom rounded-4 bg-base shadow-effect">
-                            <div class="card-custom-image rounded-4">
-                                <img class="rounded-4" src="./images/certificates/htmlpro.png" alt="HTML pro certificate">
-                            </div>
-                            <div class="card-custom-content p-4">
-                                <h4></h4>
-                                <p></p>
-                                <a class="link-custom">HTML certificate</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-md-6" data-aos="fade-up">
-                        <div class="card-custom rounded-4 bg-base shadow-effect">
-                            <div class="card-custom-image rounded-4">
-                                <img class="rounded-4" src="./images/certificates/csspro.png" alt="css pro certificate">
-                            </div>
-                            <div class="card-custom-content p-4">
-                                <h4></h4>
-                                <p></p>
-                                <a class="link-custom">css pro certificate</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-md-6" data-aos="fade-up">
-                        <div class="card-custom rounded-4 bg-base shadow-effect">
-                            <div class="card-custom-image rounded-4">
-                                <img class="rounded-4" src="./images/certificates/js.png" alt="JavaScript certificate">
-                            </div>
-                            <div class="card-custom-content p-4">
-                                <h4></h4>
-                                <p></p>
-                                <a class="link-custom">JavaScript certificate</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
             </div>
-        </section>
-        <!-- CERTIFICATES -->
+            <div class="col-md-6" data-aos="fade-up">
+                <div class="card-custom rounded-4 bg-base shadow-effect">
+                    <div class="card-custom-image rounded-4">
+                        <img class="rounded-4" src="./images/projects/ownweb.png" alt="Website for a group project">
+                    </div>
+                    <div class="card-custom-content p-4">
+                        <h4></h4>
+                        <p></p>
+                        <a class="link-custom">Flight ticket website (group project)</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6" data-aos="fade-up">
+                <div class="card-custom rounded-4 bg-base shadow-effect">
+                    <div class="card-custom-image rounded-4">
+                        <img class="rounded-4" src="./images/projects/portfolio.png" alt="this website">
+                    </div>
+                    <div class="card-custom-content p-4">
+                        <h4></h4>
+                        <p></p>
+                        <a href="#" class="link-custom">This website</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6" data-aos="fade-up">
+                <div class="card-custom rounded-4 bg-base shadow-effect">
+                    <div class="card-custom-image rounded-4">
+                        <img class="rounded-4" src="./images/projects/first_portfolio.png" alt="my first portfolio website">
+                    </div>
+                    <div class="card-custom-content p-4">
+                        <h4></h4>
+                        <p></p>
+                        <a class="link-custom">My first portfolio website</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+<!-- PROJECTS -->
+
+<!-- CERTIFICATES -->
+        <section id="certificates" class="full-height px-lg-5">
+    <div class="container">
+        <div class="row pb-4" data-aos="fade-up">
+            <div class="col-lg-8">
+                <h6 class="text-brand">certificates</h6>
+                <h1>My certificates</h1>
+            </div>
+        </div>
+
+        <div class="row gy-4">
+
+            <div class="col-md-6" data-aos="fade-up">
+                <div class="card-custom rounded-4 bg-base shadow-effect">
+                    <div class="card-custom-image rounded-4">
+                        <img class="rounded-4" src="./images/certificates/bootstrap.png" alt="Bootstrap certificate">
+                    </div>
+                    <div class="card-custom-content p-4">
+                        <h4></h4>
+                        <p></p>
+                        <a class="link-custom">Bootstrap certificate</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6" data-aos="fade-up">
+                <div class="card-custom rounded-4 bg-base shadow-effect">
+                    <div class="card-custom-image rounded-4">
+                        <img class="rounded-4" src="./images/certificates/htmlpro.png" alt="HTML pro certificate">
+                    </div>
+                    <div class="card-custom-content p-4">
+                        <h4></h4>
+                        <p></p>
+                        <a class="link-custom">HTML certificate</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6" data-aos="fade-up">
+                <div class="card-custom rounded-4 bg-base shadow-effect">
+                    <div class="card-custom-image rounded-4">
+                        <img class="rounded-4" src="./images/certificates/csspro.png" alt="css pro certificate">
+                    </div>
+                    <div class="card-custom-content p-4">
+                        <h4></h4>
+                        <p></p>
+                        <a class="link-custom">css pro certificate</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6" data-aos="fade-up">
+                <div class="card-custom rounded-4 bg-base shadow-effect">
+                    <div class="card-custom-image rounded-4">
+                        <img class="rounded-4" src="./images/certificates/js.png" alt="JavaScript certificate">
+                    </div>
+                    <div class="card-custom-content p-4">
+                        <h4></h4>
+                        <p></p>
+                        <a class="link-custom">JavaScript certificate</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+<!-- CERTIFICATES -->
 
       
 <!-- SKILLS -->
@@ -586,10 +590,10 @@
 
 
 
-           <!-- CONTACT -->
+<!-- CONTACT -->
 <section id="contact" class="full-height px-lg-5" data-aos="fade-up">
 
-<div class="contact-container">
+<div class="container">
     <div class="row pb-4" data-aos="fade-up">
         <div class="col-lg-8">
             <h6 class="text-brand">Contact</h6>
@@ -614,7 +618,7 @@
                         <span>Email</span>
                     </div>
                     <p>
-                        <span>hugowinkel24@gmail.com</span>
+                        <span>hugowinkel96@gmail.com</span>
                     </p>
                 </div>
                 <div class="contact-item">
@@ -639,7 +643,7 @@
         </div> 
   
         <div class="col-lg-8 right-contact" data-aos="fade-up">
-            <form action="https://formsubmit.co/hugowinkel24@gmail.com" class="contact-form" method="POST">
+            <form action="https://formsubmit.co/hugowinkel96@gmail.com" class="contact-form" method="POST">
                 <div class="input-control">
                     <input type="text" name="naam" required placeholder="YOUR NAME">
                     <input type="email" name="email" required placeholder="YOUR EMAIL">
@@ -662,36 +666,6 @@
 
 </section>
 <!-- //CONTACT -->
-
-
-<!-- //login -->
-<section id="login" class="full-height px-lg-5" data-aos="fade-up">
-        <div class="container">
-            <div class="row justify-content-center align-items-center">
-                <div class="col-md-6">
-                <div id="login-form">
-                    <h2 class="form-heading">Log in</h2>
-                        <form action="login.php" method="post">
-                            <div class="form-group">
-                                <label for="login-email">Enter Email</label>
-                                <input type="email" id="login-email" name="login-email" placeholder="example123@gmail.com" required>
-                            </div>
-                            <div class="form-group">
-                                <label for="login-password">Enter Password</label>
-                                <input type="password" id="login-password" name="login-password" placeholder="Example123" required>
-                            </div>
-                            <div class="form-group">
-                                <button type="submit">Log in</button>
-                            </div>
-                        </form>
-
-        <!-- Notification element -->
-        <div id="notification" style="display:none;" class="alert alert-success" role="alert">
-            <!-- Notification will be displayed here -->
-        </div>
-
-    </section>
-    <!-- //LOGIN -->
 
 
 <!-- FOOTER -->
